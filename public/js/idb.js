@@ -1,5 +1,5 @@
 let db;
-const request = indexedDB.open("track-a-budget", 1);
+const request = indexedDB.open("budget_tracker", 1);
 
 request.onupgradeneeded = function (event) {
   const db = event.target.result;
@@ -27,12 +27,12 @@ function saveRecord(record) {
   budgetObjectStore.add(record);
 }
 
-function uploadBudget() {
+function uploadTransaction() {
   // open a transaction on your pending db
-  const transaction = db.transaction(["new_budget"], "readwrite");
+  const transaction = db.transaction(["new_transaction"], "readwrite");
 
   // access your pending object store
-  const budgetObjectStore = transaction.objectStore("new_budget");
+  const budgetObjectStore = transaction.objectStore("new_transaction");
 
   // get all records from store and set to a variable
   const getAll = budgetObjectStore.getAll();
