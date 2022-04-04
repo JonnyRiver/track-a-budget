@@ -16,6 +16,16 @@ THEN the deposits or expenses added while they were offline are added to their t
 
 # Mock Up
 
-# Installation
+![Screenshot 2022-04-03 211146](https://user-images.githubusercontent.com/92954684/161458428-4dcb7059-74ab-4956-98a3-fa15638aa2f6.png)
 
+# Tools Used
 
+- IndexedDb
+- Express
+- MongoDb
+- Mongoose
+- Heroku
+
+# Deployed Application
+
+You can check out the live deployed link here, https://budget-tracker6.herokuapp.com/
